@@ -1,4 +1,4 @@
-const io = require('socket.io')(8000, {
+const io = require('socket.io')('https://zenova.netlify.app/', {
     cors: {
         origin: "*",  // Allow all origins, modify this for specific domains in production
         methods: ["GET", "POST"]
